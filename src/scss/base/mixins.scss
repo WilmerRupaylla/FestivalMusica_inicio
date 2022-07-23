@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+@mixin telefono {
+  @media (min-width: v.$telefono) {
+    @content;
+  }
+
+}
+
+@mixin table {
+    @media (min-width: v.$table) {
+      @content;
+    }
+  
+  }
+
+  @mixin lapto {
+    @media (min-width: v.$lapto) {
+      @content;
+    }
+  
+  }
+
+  @mixin desktop {
+    @media (min-width: v.$desktop) {
+      @content;
+    }
+  
+  }
