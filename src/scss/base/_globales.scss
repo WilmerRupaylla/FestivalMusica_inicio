@@ -16,7 +16,7 @@ body {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: v.$negro;
   line-height: 1.5;
 }
@@ -47,6 +47,7 @@ h3 {
 
 
 img{
-  max-width: 100%;
+  max-width: 100%;width: 100%;
+  height: auto;
   display: block;
 }

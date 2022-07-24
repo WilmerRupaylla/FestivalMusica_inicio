@@ -4,26 +4,29 @@
   @media (min-width: v.$telefono) {
     @content;
   }
-
 }
 
 @mixin table {
-    @media (min-width: v.$table) {
-      @content;
-    }
-  
+  @media (min-width: v.$table) {
+    @content;
   }
+}
 
-  @mixin lapto {
-    @media (min-width: v.$lapto) {
-      @content;
-    }
-  
+@mixin lapto {
+  @media (min-width: v.$lapto) {
+    @content;
   }
+}
 
-  @mixin desktop {
-    @media (min-width: v.$desktop) {
-      @content;
-    }
-  
+@mixin desktop {
+  @media (min-width: v.$desktop) {
+    @content;
   }
+}
+
+@mixin grid($columns ,$espaciado) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $espaciado;
+ 
+}

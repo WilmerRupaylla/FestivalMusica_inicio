@@ -323,7 +323,7 @@ body {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #222222;
   line-height: 1.5;
 }
@@ -358,6 +358,8 @@ h3 {
 
 img {
   max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -452,13 +454,15 @@ img {
 }
 
 .sobre-festival {
+  padding: 5rem 0;
+  gap: 5rem;
   display: grid;
-  gap: 2rem;
-  padding-top: 3rem;
 }
 @media (min-width: 992px) {
   .sobre-festival {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
   }
 }
 
