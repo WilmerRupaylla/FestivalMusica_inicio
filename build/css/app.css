@@ -453,9 +453,13 @@ img {
 
 .sobre-festival {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 5rem;
-  padding: 5rem 0;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+@media (min-width: 992px) {
+  .sobre-festival {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contenido-festival {

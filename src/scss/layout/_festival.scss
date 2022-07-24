@@ -2,10 +2,16 @@
 @use "base/mixins" as m;
 
 .sobre-festival {
+  @include m.lapto{
+   
+   grid-template-columns: 1fr 1fr;
+    
+  }
+
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 5rem;
-  padding: 5rem 0;
+  gap: 2rem;
+  padding-top: 3rem;
+  
 }
 
 .contenido-festival {
