@@ -2,7 +2,22 @@
 @use "base/mixins" as m;
 
 .header {
+
+
+
+ 
   background-color: v.$verde;
+
+
+  &.fijo{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0.1rem 0.2rem 0.3rem #363636;
+  }
+
+
   h1 {
     color: v.$blanco;
     text-align: center;
@@ -42,3 +57,5 @@
     }
   }
 }
+
+

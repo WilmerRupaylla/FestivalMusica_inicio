@@ -15,13 +15,15 @@
   </head>
 
   <body>
+
+    bo
     <header class="header">
       <div class="contenedor contenido-header">
         <h1>Rock & EDM Festival</h1>
         <nav class="navegacion-principal">
-          <a href="#">Line Up</a>
-          <a href="#">Galeria</a>
-          <a href="#">Boletos</a>
+          <a href="#LineUp">Line Up</a>
+          <a href="#Galeria">Galeria</a>
+          <a href="#Boletos">Boletos</a>
         </nav>
       </div>
     </header>
@@ -69,7 +71,7 @@
       </div>
     </section>
 
-    <section class="lineup">
+    <section id="LineUp" class="lineup">
       <h3>Line up</h3>
       <p class="dia">Viernes 21</p>
       <div class="escenarios-contenedor contenedor">
@@ -81,11 +83,13 @@
             <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
+            <li>12:00 | <spam>metallica</spam></li>
           </ul>
         </div>
         <div class="escenario edm bg-verde">
           <p class="nombre-escenario">Escenario EDM</p>
           <ul class="calendario">
+            <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
@@ -104,11 +108,14 @@
             <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
+            <li>12:00 | <spam>metallica</spam></li>
           </ul>
         </div>
+
         <div class="escenario edm bg-amarillo">
           <p class="nombre-escenario">Escenario EDM</p>
           <ul class="calendario">
+            <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
             <li>12:00 | <spam>metallica</spam></li>
@@ -118,5 +125,54 @@
         </div>
       </div>
     </section>
+
+    <section id="Galeria" class="galeria contenedor">
+      <h3>Galeria</h3>
+      <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="Boletos" class="boletos bg-verde">
+      <h3>Boletos</h3>
+      <div class="contenedor contenedor-boletos">
+        <div class="basico pase">
+          <p class="nombre-pase">pase 1 dia</p>
+          <header class="pase-header">
+            <p>incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Comida y bebida</li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$ 100</p>
+          </footer>
+        </div>
+        <div class="premiun pase">
+          <p class="nombre-pase">pase 2 días</p>
+          <header class="pase-header">
+            <p>incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Comida y bebida</li>
+              <li>Camisa del Evento</li>
+              <li>Acceso Vip</li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$ 100</p>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="fotter">
+      <p>Rock & EDM Festival. Todos los derechos reservados</p>
+    </footer>
+    <script src="build/js/app.js"></script>
   </body>
 </html>

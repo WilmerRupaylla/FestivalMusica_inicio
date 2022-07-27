@@ -8,18 +8,20 @@
   h3,
   p {
     text-align: center;
+
+    color: v.$blanco;
   }
 
   .dia {
     text-transform: uppercase;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
   }
 }
 
 .escenarios-contenedor {
   display: grid;
   gap: 3rem;
-  @include m.lapto {
+  @include m.table {
     @include m.grid(2, 5rem);
   }
 
@@ -30,12 +32,12 @@
     padding-top: 3rem;
     p {
       &:after {
-       content:'';
-       display: block;
-       background-repeat: no-repeat;
-       background-position: center center;
-       margin: 2rem auto 0 auto;
-       background-size: 15rem;
+        content: "";
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 2rem auto 0 auto;
+        background-size: 15rem;
         width: 200px;
         height: 100px;
       }
@@ -52,8 +54,25 @@
 
 .bg-amarillo {
   background-color: v.$amarillo;
+  li:nth-child(odd) {
+    background-color: darken(v.$amarillo, 10%);
+  }
 }
 
 .bg-verde {
   background-color: v.$verde;
+  li:nth-child(odd) {
+    background-color: darken(v.$verde, 10%);
+  }
+}
+
+.calendario {
+  @include m.resetear-lista;
+  li {
+    padding: 2.5rem;
+    font-weight: 700;
+    span {
+      font-weight: 400;
+    }
+  }
 }
